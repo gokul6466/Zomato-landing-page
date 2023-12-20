@@ -338,3 +338,137 @@
     width:35%;
 }
 
+@media only screen and(max-width:1300px){
+    .get_the_app .semicontainer .left,
+    .get_the_app .semicontainer .right{
+        flex:1;
+    }
+
+    .get_the_app .semicontainer{
+        width:80px;
+    }
+}
+
+
+@media only screen and(max-width:900px){
+    .get_the_app {
+        padding:zero;
+    }
+    .get_the_app .semicontainer{
+        width:90%;
+        flex-direction: column;
+    }
+}
+
+.footer{
+    width:100%;
+}
+.footer_section1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:80%;
+    margin:auto;
+}
+
+.footer_section1 img{
+    width:130px;
+}
+
+.section1__buttoncontainer{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.section1__buttoncontainer button{
+    padding:5px;
+    width:90px;
+    border:1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+    cursor:pointer;
+}
+
+.navigation_container{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(5, 1fr);
+    width:80%;
+    margin:auto;
+    gap:1rem;
+    padding:3rem 0;
+}
+.links__container{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.links__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    letter-spacing: 0.8px;
+}
+
+.footer_link{
+    text-decoration: none;
+    color:gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+.footer_link:hover{
+    color:black;
+}
+.section_linkscontainer button{
+   background-color: black;
+   border:none;
+   width:25px;
+   height:25px;
+   border-radius: 30px;
+}
+
+.section_linkscontainer button i{
+    color:white;
+    font-size: 13px;
+    display: flex;
+    /*horizontal/ x-axis*/
+    align-items: center;
+    /*vertical/ y-axis*/
+    justify-content: center;
+    cursor:pointer;
+}
+.footer__section_logos{
+    width:100%;
+}
+.disclaimer{
+    width:95%;
+    color:gray;
+    margin:auto;
+    border-top: 1px solid grey;
+    padding-top: 1.5rem;
+
+}
+@media only screen and(max-width:900px){
+    .navigation_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media only screen and(max-width:500px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media only screen and(max-width:900px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
